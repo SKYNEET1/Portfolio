@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class=" fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1> Hi, I'm <br><span>Swagat Nandan Rout</span> </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>I'm a passionate Frontend Developer with a strong foundation in HTML, CSS, JavaScript, React.js,
+                        and Tailwind CSS. I enjoy turning complex problems into clean, responsive, and user-friendly web
+                        interfaces. My goal is to build visually appealing and functional websites that offer seamless
+                        user experiences across all devices. I'm constantly learning and staying up-to-date with modern
+                        web technologies to improve both my skills and the quality of my work.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-containts active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Developement</span><br>Designing Web interfaces</li>
+                            <li><span>Web Developement</span><br>Designing Web Applications</li>
+                            <li><span>Video Editing</span><br>Profetional Editor</li>
+                        </ul>
+                    </div>
+                    <div class="tab-containts" id="experience">
+                        <ul>
+                            <li><span>Nov - Jan (2023)</span><br>Pioneer Trainee(_VOIS)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-containts" id="education">
+                        <ul>
+                            <li><span>2020(10th)</span><br>ST Xavier High School</li>
+                            <li><span>2023(Bsc.Data Science)</span><br>Ravenshaw University</li>
+                            <li><span>2026(MCA)</span><br>VSSUT:Veer Surendra Sai University of Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <div id="services">
+        <div class="container">
+            <h2 class="sub-title">
+                My Services
+            </h2>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-user-group"></i>
+                    <h2>FullStack Web Developement</h2>
+                    <p>I actively participated in a collaborative hackathon where I worked alongside my college peers to
+                        build a full-stack web application using React for the frontend and Node.js with Express for the
+                        backend. This hands-on experience helped me apply my skills in real-time development, team
+                        collaboration, and fast-paced problem-solving.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Developement</h2>
+                    <p>I built a dynamic blog website using React, implementing advanced concepts like React Router,
+                        useParams, dynamic routing, and reusable components for a seamless user experience. This project
+                        helped me deepen my understanding of single-page applications and component-based architecture.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">
+                My Work
+            </h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p> <i class="fa-solid fa-paper-plane"></i>snrout18@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone-volume"></i>+91 8328862453</p>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                    </div>
+                    <a href="images/Swagat_resume.pdf" download="" class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formsubmit.co/snrout18@gmail.com" method="POST" >
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyrigth">
+            <p>Copyright © Swagat. Fill the form to get the source code <i class="fa-solid fa-code"></i></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
